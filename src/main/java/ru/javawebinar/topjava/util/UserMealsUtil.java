@@ -36,7 +36,6 @@ public class UserMealsUtil {
                 calories = allCaloriesPerDay.get(meal.getDateTime().toLocalDate());
             }
             allCaloriesPerDay.put(meal.getDateTime().toLocalDate(), calories + meal.getCalories());
-            System.out.println(meal.getDateTime() + "   " + allCaloriesPerDay.get(meal.getDateTime().toLocalDate()));
         }
 
         List<UserMealWithExcess> filteredMeals = new ArrayList<>();
